@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "hrmo-web-backend": {
+      "main": "src/hrmo-web-backend/main.mo",
+      "type": "motoko"
+    },
+    "hrmo-web-frontend": {
+      "dependencies": [
+        "hrmo-web-backend"
+      ],
+      "source": [
+        "src/hrmo-web-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "hrmo-web-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
